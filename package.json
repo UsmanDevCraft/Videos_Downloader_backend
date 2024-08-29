@@ -14,6 +14,6 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "nayan-media-downloader": "^2.4.8"
+    "nayan-media-downloader": "^2.0.3"
   }
 }

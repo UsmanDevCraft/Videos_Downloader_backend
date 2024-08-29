@@ -7,6 +7,9 @@ app.use(express.json());
 const port = 5000;
 
 //routes for all pages
+app.get("", (req, res)=>{
+    res.send("App working fine 🥰");
+})
 app.use("/api", require("./routes/youtube"));
 app.use("/api", require("./routes/facebook"));
 app.use("/api", require("./routes/instagram"));
