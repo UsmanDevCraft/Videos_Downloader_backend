@@ -1,0 +1,19 @@
+{
+  "name": "videos_downloader",
+  "version": "1.0.0",
+  "description": "this is an open source app for videos downloader from youtube, facebook and instagram.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "usman-awan",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nayan-media-downloader": "^2.4.8"
+  }
+}
