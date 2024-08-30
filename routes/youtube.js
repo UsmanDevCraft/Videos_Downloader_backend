@@ -1,6 +1,6 @@
 const express = require("express");
-const ytdown = require("nayan-media-downloader");
 const router = express.Router();
+const { ytdown } = require("nayan-media-downloader");
 
 router.post('/youtube', async (req, res) => {
     const { ytVidUrl } = req.body;
