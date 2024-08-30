@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
+const {alldown} = require("nayan-media-downloader");
 
 router.post('/shorts', async (req, res) => {
     const { shortsVidUrl } = req.body;
     try {
-        const {alldown} = require("nayan-media-downloader");
         const url = shortsVidUrl // past url
 
         alldown(url).then(data => {
@@ -12,7 +12,7 @@ router.post('/shorts', async (req, res) => {
         });
 
     } catch (error) {
-        res.status(400).json({error: error})
+        res.status(400).json({ error: error.message });
     }
 })
 
